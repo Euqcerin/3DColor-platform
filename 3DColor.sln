@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DColor", "3DColor\3DColor\3DColor.csproj", "{4309BDBD-3667-42AC-8A99-C5E7611AC489}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "3DColorContent", "3DColor\3DColorContent\3DColorContent.contentproj", "{69A1D135-7BD7-4B73-AFDA-4EDB513165CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DColorContent", "3DColor\3DColorContent\3DColorContent.contentproj", "{69A1D135-7BD7-4B73-AFDA-4EDB513165CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentLibrary", "ContentLibrary\ContentLibrary.csproj", "{9CA378D8-CDF4-4BE1-8F01-0413C388EAA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +19,10 @@ Global
 		{4309BDBD-3667-42AC-8A99-C5E7611AC489}.Release|x86.Build.0 = Release|x86
 		{69A1D135-7BD7-4B73-AFDA-4EDB513165CE}.Debug|x86.ActiveCfg = Debug|x86
 		{69A1D135-7BD7-4B73-AFDA-4EDB513165CE}.Release|x86.ActiveCfg = Release|x86
+		{9CA378D8-CDF4-4BE1-8F01-0413C388EAA1}.Debug|x86.ActiveCfg = Debug|x86
+		{9CA378D8-CDF4-4BE1-8F01-0413C388EAA1}.Debug|x86.Build.0 = Debug|x86
+		{9CA378D8-CDF4-4BE1-8F01-0413C388EAA1}.Release|x86.ActiveCfg = Release|x86
+		{9CA378D8-CDF4-4BE1-8F01-0413C388EAA1}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
