@@ -15,5 +15,17 @@ namespace ContentLibrary
     {
 
         public static ContentManager Content;
+
+        /// <summary>
+        /// Loads a soundeffect
+        /// </summary>
+        /// <param name="sName">Searchpath for the soundeffect</param>
+        /// <returns>Returns soundeffect</returns>
+        public static SoundEffect GetSoundEffect(string sName) 
+        {
+            SoundEffect soundeffect = null;
+            soundeffect = Content.Load<SoundEffect>(sName);
+            return soundeffect;    
+        }
     }
 }

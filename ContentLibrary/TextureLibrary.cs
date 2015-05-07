@@ -16,9 +16,9 @@ namespace ContentLibrary
         public static ContentManager Content;
 
         /// <summary>
-        /// Gets a texture
+        /// Loads a texture
         /// </summary>
-        /// <param name="sName">Name of the texture</param>
+        /// <param name="sName">Searchpath of the texture</param>
         /// <returns>Returns texture</returns>
         public static Texture2D GetTexture(string sName)
         {

@@ -18,9 +18,9 @@ namespace ContentLibrary
         public static ContentManager Content;
 
         /// <summary>
-        /// Gets a font
+        /// Loads a font
         /// </summary>
-        /// <param name="sName">Name of the font</param>
+        /// <param name="sName">Searchpath of the font</param>
         /// <returns>Returns font</returns>
         public static SpriteFont GetFont(string sName)
         {
