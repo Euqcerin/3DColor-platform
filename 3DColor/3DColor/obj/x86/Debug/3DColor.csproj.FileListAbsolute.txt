@@ -1,0 +1,2 @@
+C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\obj\x86\Debug\3DColor.csprojResolveAssemblyReference.cache
+C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
