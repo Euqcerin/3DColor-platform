@@ -7,7 +7,7 @@ using System.Text;
 
 namespace _3DColor.State
 {
-    class BaseState
+    public class BaseState
     {
         public BaseState()
         { 
