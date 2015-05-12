@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.Media;
 
 namespace ContentLibrary
 {
-    class SoundLibrary
+    public class SoundLibrary
     {
 
         public static ContentManager Content;

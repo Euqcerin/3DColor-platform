@@ -12,7 +12,7 @@ using Microsoft.Xna.Framework.Media;
 
 namespace ContentLibrary
 {
-    class FontLibrary
+    public class FontLibrary
     {
 
         public static ContentManager Content;

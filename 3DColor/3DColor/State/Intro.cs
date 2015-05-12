@@ -26,7 +26,7 @@ namespace _3DColor.State
         #endregion
 
         #region GFX FIELD
-        private double cloudTimer = 5;
+        private double cloudTimer = 2;
         private double cloudTimerSpawn = 0;
         #endregion
 
@@ -35,7 +35,8 @@ namespace _3DColor.State
         }
 
         private void SpawnCloud() {
-            Libraries.GFXHelper.CreateGFX(t_cloud1,new Vector2(t_cloud1.Bounds.Width, t_cloud1.Bounds.Height), new Vector2(300, 100), new Vector2(3, 0), true, 0, "");
+            Random rand = new Random();
+            Libraries.GFXHelper.CreateGFX(t_cloud1,new Vector2(t_cloud1.Bounds.Width, t_cloud1.Bounds.Height), new Vector2(300, 100), new Vector2(3, 0), true, 5, "");
         }
 
         #region Content, Draw, Update

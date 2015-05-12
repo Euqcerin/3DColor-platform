@@ -1,3 +1,4 @@
 Content\Graphics\Intro\Background.xnb
 Content\Graphics\Intro\Cloud1.xnb
 Content\Graphics\Intro\Logo.xnb
+Content\Fonts\Basicfont.xnb

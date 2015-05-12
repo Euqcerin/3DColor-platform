@@ -18,8 +18,11 @@ namespace _3DColor
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        private FrameCounter frameCounter = new FrameCounter();
 
         public static State.BaseState state;
+
+        private SpriteFont sf;
 
 
         public Game1()
@@ -42,6 +45,8 @@ namespace _3DColor
 
             this.graphics.PreferredBackBufferWidth = 1920;
             this.graphics.PreferredBackBufferHeight = 1080;
+            this.graphics.SynchronizeWithVerticalRetrace = false;
+            this.IsFixedTimeStep = false;
             //this.graphics.IsFullScreen = true;
             this.graphics.ApplyChanges();
 
@@ -58,10 +63,11 @@ namespace _3DColor
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             ContentLibrary.TextureLibrary.Content = Content;
+            ContentLibrary.FontLibrary.Content = Content;
+            sf = ContentLibrary.FontLibrary.GetFont("Fonts/Basicfont");
 
             state.LoadContent();
 
-            // TODO: use this.Content to load your game content here
         }
 
         /// <summary>
@@ -83,7 +89,7 @@ namespace _3DColor
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 this.Exit();
-
+            frameCounter.Update((float)gt.ElapsedGameTime.TotalSeconds);
             state.Update(gt);
 
             Libraries.GFXHelper.Update(gt);
@@ -101,6 +107,8 @@ namespace _3DColor
             spriteBatch.Begin();
             state.Draw(spriteBatch);
             Libraries.GFXHelper.Draw(spriteBatch);
+            var fps = string.Format("FPS: {0}", frameCounter.AverageFramesPerSecond);
+            spriteBatch.DrawString(sf, fps, new Vector2(1, 1), Color.Black);
             spriteBatch.End();
             base.Draw(gameTime);
         }

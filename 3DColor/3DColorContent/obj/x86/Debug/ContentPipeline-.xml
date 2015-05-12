@@ -28,6 +28,15 @@
       <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\Intro\Logo.xnb</Output>
       <Time>2014-06-14T12:54:30.7036271+02:00</Time>
     </Item>
+    <Item>
+      <Source>Fonts\Basicfont.spritefont</Source>
+      <Name>Fonts\Basicfont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Fonts\Basicfont.xnb</Output>
+      <Time>2015-05-12T21:00:57.8988475+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID Null="true" />
