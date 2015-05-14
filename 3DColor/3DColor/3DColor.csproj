@@ -107,6 +107,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Input.cs" />
     <Compile Include="Libraries\FrameCounter.cs" />
     <Compile Include="GFX.cs" />
     <Compile Include="Libraries\GFXHelper.cs" />
@@ -115,6 +116,9 @@
     <Compile Include="Game1.cs" />
     <Compile Include="State\BaseState.cs" />
     <Compile Include="State\Intro.cs" />
+    <Compile Include="State\Menu.cs" />
+    <Compile Include="State\Options.cs" />
+    <Compile Include="Values.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

@@ -50,6 +50,12 @@ namespace _3DColor
             //this.graphics.IsFullScreen = true;
             this.graphics.ApplyChanges();
 
+            Values.SCREEN_HEIGHT = GraphicsDevice.PresentationParameters.BackBufferHeight;
+            Values.SCREEN_WIDTH = GraphicsDevice.PresentationParameters.BackBufferWidth;
+            Values.SCREEN_IS_FULLSCREEN = false;
+
+            //Input.InitInput();
+
             base.Initialize();
         }
 
@@ -65,6 +71,7 @@ namespace _3DColor
             ContentLibrary.TextureLibrary.Content = Content;
             ContentLibrary.FontLibrary.Content = Content;
             sf = ContentLibrary.FontLibrary.GetFont("Fonts/Basicfont");
+
 
             state.LoadContent();
 
@@ -86,14 +93,16 @@ namespace _3DColor
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gt)
         {
+            //Input.UpdateCurrent();
             // Allows the game to exit
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                this.Exit();
+            //if (Input.CurrentKeyboardState.IsKeyDown(Keys.Escape))
+            //    this.Exit();
             frameCounter.Update((float)gt.ElapsedGameTime.TotalSeconds);
             state.Update(gt);
 
             Libraries.GFXHelper.Update(gt);
-            
+
+            //Input.UpdatePrevious();
             base.Update(gt);
         }
 

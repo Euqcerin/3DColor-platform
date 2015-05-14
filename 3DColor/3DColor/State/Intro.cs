@@ -6,6 +6,7 @@ using ContentLibrary;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using ContentLibrary;
+using Microsoft.Xna.Framework.Input;
 
 namespace _3DColor.State
 {
@@ -30,8 +31,7 @@ namespace _3DColor.State
         private double cloudTimerSpawn = 0;
         #endregion
 
-        public Intro() : base() { 
-        
+        public Intro() : base() {
         }
 
         private void SpawnCloud() {
@@ -57,6 +57,9 @@ namespace _3DColor.State
                 SpawnCloud();
                 cloudTimerSpawn = 0;
             }
+
+            if (Keyboard.GetState().IsKeyDown(Keys.N))
+                Game1.state = new State.Menu();
             
             base.Update(gt);
         }
