@@ -29,6 +29,7 @@ namespace _3DColor
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            Components.Add(new InputHandler(this));
         }
 
         /// <summary>
@@ -39,7 +40,9 @@ namespace _3DColor
         /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
+
+            ContentLibrary.TextureLibrary.Content = Content;
+            ContentLibrary.FontLibrary.Content = Content;
 
             state = new State.Intro();
 
@@ -47,14 +50,12 @@ namespace _3DColor
             this.graphics.PreferredBackBufferHeight = 1080;
             this.graphics.SynchronizeWithVerticalRetrace = false;
             this.IsFixedTimeStep = false;
-            //this.graphics.IsFullScreen = true;
+            this.graphics.IsFullScreen = false;
             this.graphics.ApplyChanges();
 
             Values.SCREEN_HEIGHT = GraphicsDevice.PresentationParameters.BackBufferHeight;
             Values.SCREEN_WIDTH = GraphicsDevice.PresentationParameters.BackBufferWidth;
             Values.SCREEN_IS_FULLSCREEN = false;
-
-            //Input.InitInput();
 
             base.Initialize();
         }
@@ -65,16 +66,8 @@ namespace _3DColor
         /// </summary>
         protected override void LoadContent()
         {
-            // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            ContentLibrary.TextureLibrary.Content = Content;
-            ContentLibrary.FontLibrary.Content = Content;
             sf = ContentLibrary.FontLibrary.GetFont("Fonts/Basicfont");
-
-
-            state.LoadContent();
-
         }
 
         /// <summary>

@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using ContentLibrary;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Content;
 
 namespace _3DColor.State
 {
@@ -31,13 +32,22 @@ namespace _3DColor.State
         private double cloudTimerSpawn = 0;
         #endregion
 
+        #region Constructor
+
         public Intro() : base() {
+            LoadContent();
         }
+
+        #endregion
+
+        #region General Methods
 
         private void SpawnCloud() {
             Random rand = new Random();
             Libraries.GFXHelper.CreateGFX(t_cloud1,new Vector2(t_cloud1.Bounds.Width, t_cloud1.Bounds.Height), new Vector2(300, 100), new Vector2(3, 0), true, 5, "");
         }
+
+        #endregion 
 
         #region Content, Draw, Update
 
@@ -45,7 +55,6 @@ namespace _3DColor.State
         {
             t_background = TextureLibrary.GetTexture(BACKGROUND);
             t_logo = TextureLibrary.GetTexture(LOGO);
-            //t_text = TextureLibrary.GetTexture(TEXT);
             t_cloud1 = TextureLibrary.GetTexture(CLOUD1);
             base.LoadContent();
         }
@@ -58,9 +67,9 @@ namespace _3DColor.State
                 cloudTimerSpawn = 0;
             }
 
-            if (Keyboard.GetState().IsKeyDown(Keys.N))
+            if (InputHandler.KeyReleased(Keys.N))
                 Game1.state = new State.Menu();
-            
+
             base.Update(gt);
         }
 
