@@ -51,11 +51,12 @@ namespace _3DColor
             this.graphics.SynchronizeWithVerticalRetrace = false;
             this.IsFixedTimeStep = false;
             this.graphics.IsFullScreen = false;
+            this.IsMouseVisible = true;
             this.graphics.ApplyChanges();
 
             Values.SCREEN_HEIGHT = GraphicsDevice.PresentationParameters.BackBufferHeight;
             Values.SCREEN_WIDTH = GraphicsDevice.PresentationParameters.BackBufferWidth;
-            Values.SCREEN_IS_FULLSCREEN = false;
+            Values.FULLSCREEN = false;
 
             base.Initialize();
         }

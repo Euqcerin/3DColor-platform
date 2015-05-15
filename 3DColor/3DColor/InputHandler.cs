@@ -161,6 +161,15 @@ namespace _3DColor
             return currentStateMouse.LeftButton == ButtonState.Pressed;
         }
 
+        /// <summary>
+        /// Returns the postions of the mouse pointer
+        /// </summary>
+        /// <returns></returns>
+        public static Point MousePosition()
+        {
+            return new Point(currentStateMouse.X, currentStateMouse.Y);
+        }
+
         #endregion
     }
 }

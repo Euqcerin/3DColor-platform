@@ -15,7 +15,7 @@ namespace _3DColor
         #region Screen Values
         public static int SCREEN_WIDTH;
         public static int SCREEN_HEIGHT;
-        public static bool SCREEN_IS_FULLSCREEN;
+        public static bool FULLSCREEN;
         #endregion
 
         #region Color Values

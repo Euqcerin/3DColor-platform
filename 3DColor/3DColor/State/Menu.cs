@@ -69,17 +69,16 @@ namespace _3DColor.State
 
         public override void Update(GameTime gt)
         {
-            if (t_play_rect.Contains(Mouse.GetState().X, Mouse.GetState().Y)) { 
+            if (t_play_rect.Contains(InputHandler.MousePosition()) && InputHandler.MouseReleased()) { 
 
-            
             }
 
-            else if (t_play_rect.Contains(Mouse.GetState().X, Mouse.GetState().Y)) { 
-            
+            else if (t_options_rect.Contains(InputHandler.MousePosition()) && InputHandler.MouseReleased()) {
+                Game1.state = new Options();   
             }
 
-            else if (t_play_rect.Contains(Mouse.GetState().X, Mouse.GetState().Y)) {
-           
+            else if (t_exit_rect.Contains(InputHandler.MousePosition())) {
+                
             }
 
 
