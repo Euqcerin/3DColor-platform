@@ -11,3 +11,5 @@ C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\
 C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\obj\x86\Debug\3DColor.pdb
 C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Fonts\Basicfont.xnb
 C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Fonts\Intro.xnb
+C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\Options\Box.xnb
+C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Fonts\Options.xnb

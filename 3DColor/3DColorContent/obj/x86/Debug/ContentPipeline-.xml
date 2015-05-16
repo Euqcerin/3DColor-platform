@@ -46,6 +46,24 @@
       <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Fonts\Intro.xnb</Output>
       <Time>2015-05-14T21:48:00.5751274+02:00</Time>
     </Item>
+    <Item>
+      <Source>Graphics\Options\Box.png</Source>
+      <Name>Graphics\Options\Box</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\Options\Box.xnb</Output>
+      <Time>2015-05-16T23:19:09.2887671+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\Options.spritefont</Source>
+      <Name>Fonts\Options</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Fonts\Options.xnb</Output>
+      <Time>2015-05-16T23:41:58.8961042+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID Null="true" />
