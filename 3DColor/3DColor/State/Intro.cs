@@ -13,21 +13,17 @@ namespace _3DColor.State
 {
     public class Intro : BaseState
     {
-        #region TEXTUREPATHS
-        private const string BACKGROUND = "Graphics/Intro/Background";
+        #region Fields
+        private const string BACKGROUND = "Graphics/General/Background";
         private const string LOGO = "Graphics/Intro/Logo";
         private const string TEXT = "Graphics/Intro/Text";
         private const string CLOUD1 = "Graphics/Intro/Cloud1";
-        #endregion
 
-        #region FIELDS
         private Texture2D t_background;
         private Texture2D t_logo;
         private Texture2D t_text;
         private Texture2D t_cloud1;
-        #endregion
 
-        #region GFX FIELD
         private double cloudTimer = 2;
         private double cloudTimerSpawn = 0;
         #endregion
@@ -49,7 +45,7 @@ namespace _3DColor.State
 
         #endregion 
 
-        #region Content, Draw, Update
+        #region XNA Methods
 
         public override void LoadContent()
         {

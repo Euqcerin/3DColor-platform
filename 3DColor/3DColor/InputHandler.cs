@@ -20,7 +20,7 @@ namespace _3DColor
 
         #endregion
 
-        #region Property Region
+        #region Properties
 
         public static KeyboardState KeyboardState
         {
@@ -43,7 +43,7 @@ namespace _3DColor
         }
         #endregion
 
-        #region Constructor Region
+        #region Constructor
 
         public InputHandler(Game game)
             : base(game)
@@ -54,7 +54,7 @@ namespace _3DColor
         }
         #endregion
 
-        #region XNA Framework Methods
+        #region XNA Methods
 
         /// <summary>
         /// Allows the game component to perform any initialization it needs to before
@@ -81,7 +81,7 @@ namespace _3DColor
         }
         #endregion
 
-        #region General Method Region
+        #region General Method
 
         /// <summary>
         /// Cycle the states by setting last to current. This is a bad cleanup.
@@ -94,7 +94,7 @@ namespace _3DColor
 
         #endregion
 
-        #region Keyboard Region
+        #region Keyboard Methods
         /// <summary>
         /// Check for releases by comparing the previous state to the current state.
         /// In the event of a key release it will have been down, and currently its up
@@ -131,7 +131,7 @@ namespace _3DColor
 
         #endregion
 
-        #region Mouse Region
+        #region Mouse Methods
         /// <summary>
         /// Checks for releases by comparing the previous state to the current state.
         /// </summary>

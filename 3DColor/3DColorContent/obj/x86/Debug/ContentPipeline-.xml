@@ -2,15 +2,6 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>Graphics\Intro\Background.jpg</Source>
-      <Name>Graphics\Intro\Background</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\Intro\Background.xnb</Output>
-      <Time>2015-05-09T12:34:09.2007812+02:00</Time>
-    </Item>
-    <Item>
       <Source>Graphics\Intro\Cloud1.png</Source>
       <Name>Graphics\Intro\Cloud1</Name>
       <Importer>TextureImporter</Importer>
@@ -47,15 +38,6 @@
       <Time>2015-05-14T21:48:00.5751274+02:00</Time>
     </Item>
     <Item>
-      <Source>Graphics\Options\Box.png</Source>
-      <Name>Graphics\Options\Box</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\Options\Box.xnb</Output>
-      <Time>2015-05-16T23:19:09.2887671+02:00</Time>
-    </Item>
-    <Item>
       <Source>Fonts\Options.spritefont</Source>
       <Name>Fonts\Options</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -63,6 +45,24 @@
       <Options>None</Options>
       <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Fonts\Options.xnb</Output>
       <Time>2015-05-16T23:41:58.8961042+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Graphics\General\Background.jpg</Source>
+      <Name>Graphics\General\Background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\General\Background.xnb</Output>
+      <Time>2015-05-09T12:34:09.2007812+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Graphics\General\Box.png</Source>
+      <Name>Graphics\General\Box</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\General\Box.xnb</Output>
+      <Time>2015-05-16T23:19:09.2887671+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

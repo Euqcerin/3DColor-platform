@@ -42,10 +42,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Graphics\Options\" />
     <Folder Include="Sounds\Intro\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Graphics\Intro\Background.jpg">
+    <Compile Include="Graphics\General\Background.jpg">
       <Name>Background</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
@@ -73,10 +74,11 @@
       <Name>Intro</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
+      <SubType>Designer</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Graphics\Options\Box.png">
+    <Compile Include="Graphics\General\Box.png">
       <Name>Box</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
