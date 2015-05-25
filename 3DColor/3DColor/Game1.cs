@@ -53,11 +53,7 @@ namespace _3DColor
             this.graphics.IsFullScreen = false;
             this.IsMouseVisible = true;
             this.graphics.ApplyChanges();
-
-            Values.SCREEN_HEIGHT = GraphicsDevice.PresentationParameters.BackBufferHeight;
-            Values.SCREEN_WIDTH = GraphicsDevice.PresentationParameters.BackBufferWidth;
-            Values.FULLSCREEN = false;
-
+            InitValues();
             base.Initialize();
         }
 
@@ -114,6 +110,16 @@ namespace _3DColor
             spriteBatch.DrawString(sf, fps, new Vector2(1, 1), Color.Black);
             spriteBatch.End();
             base.Draw(gameTime);
+        }
+
+        private void InitValues() {
+            Values.SCREEN_HEIGHT = GraphicsDevice.PresentationParameters.BackBufferHeight;
+            Values.SCREEN_WIDTH = GraphicsDevice.PresentationParameters.BackBufferWidth;
+            Values.FULLSCREEN = false;
+
+            Values.CURRENT_DARK = Values.BLUE_DARK;
+            Values.CURRENT_NORMAL = Values.BLUE_NORMAL;
+            Values.CURRENT_LIGHT = Values.BLUE_LIGHT;
         }
     }
 }

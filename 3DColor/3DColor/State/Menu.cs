@@ -59,12 +59,11 @@ namespace _3DColor.State
 
         public override void Draw(SpriteBatch sb)
         {
-
-            sb.Draw(t_background, Vector2.Zero, Color.White);
+            base.Draw(sb);
             sb.DrawString(t_font, "PLAY", t_play_pos, Color.White);
             sb.DrawString(t_font, "OPTIONS", t_options_pos, Color.White);
             sb.DrawString(t_font, "EXIT", t_exit_pos, Color.White);
-            base.Draw(sb);
+
         }
 
         #endregion

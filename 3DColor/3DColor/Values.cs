@@ -20,6 +20,11 @@ namespace _3DColor
 
         #region Color Values
 
+        //CURRENT COLOR
+        public static Color CURRENT_DARK;
+        public static Color CURRENT_NORMAL;
+        public static Color CURRENT_LIGHT;
+
         //BLUE
         public static Color BLUE_DARK = new Color(0, 95, 107);
         public static Color BLUE_NORMAL = new Color(0, 140, 158);

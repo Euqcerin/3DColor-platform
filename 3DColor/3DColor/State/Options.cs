@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using ContentLibrary;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 
 namespace _3DColor.State
 {
@@ -50,6 +51,13 @@ namespace _3DColor.State
         private Rectangle t_purple_rect;
         private Rectangle t_gray_rect;
 
+        private Rectangle t_current_rect;
+
+        private Rectangle t_choosencolor_left;
+        private Rectangle t_choosencolor_right;
+        private Rectangle t_choosencolor_top;
+        private Rectangle t_choosencolor_bot;
+
         private string t_color_scheme;
         
         #endregion
@@ -61,6 +69,12 @@ namespace _3DColor.State
 
             LoadContent();
             InitColorRect();
+            t_current_rect = t_blue_rect;
+
+            t_choosencolor_left = new Rectangle(t_current_rect.X - 20, t_current_rect.Y - 20, 5, t_current_rect.Height + 40);
+            t_choosencolor_right = new Rectangle(t_current_rect.X + t_current_rect.Width + 15, t_current_rect.Y - 20, 5, t_current_rect.Height + 40);
+            t_choosencolor_top = new Rectangle(t_current_rect.X - 20, t_current_rect.Y - 20, t_current_rect.Width + 40, 5);
+            t_choosencolor_bot = new Rectangle(t_current_rect.X - 20, t_current_rect.Y + t_current_rect.Height + 15, t_current_rect.Width + 40, 5);
         }
 
         #endregion
@@ -76,23 +90,34 @@ namespace _3DColor.State
 
             ChangeColorScheme();
 
+            if (InputHandler.KeyReleased(Keys.B))
+                Game1.state = new Menu();
+
+            t_choosencolor_left = new Rectangle(t_current_rect.X - 20, t_current_rect.Y - 20, 5, t_current_rect.Height + 40);
+            t_choosencolor_right = new Rectangle(t_current_rect.X + t_current_rect.Width + 15, t_current_rect.Y - 20, 5, t_current_rect.Height + 40);
+            t_choosencolor_top = new Rectangle(t_current_rect.X - 20, t_current_rect.Y - 20, t_current_rect.Width + 40, 5);
+            t_choosencolor_bot = new Rectangle(t_current_rect.X - 20, t_current_rect.Y + t_current_rect.Height + 15, t_current_rect.Width + 40, 5);
+
             base.Update(gt);
         }
-
+        
         /// <summary>
         /// Draw methos
         /// </summary>
         /// <param name="sb">Spritebatch</param>
         public override void Draw(SpriteBatch sb)
         {
-            sb.Draw(t_background, new Rectangle(0, 0, 1920, 1080), Color.White);
+            base.Draw(sb);
 
             for (int i = 0; i < l_color_rect.Count; i++)
                 l_color_rect[i].Draw(sb);
 
             sb.DrawString(t_font, "Color scheme: " + t_color_scheme.ToString(), new Vector2(1, 100), Color.White);
+            sb.Draw(t_box, t_choosencolor_left, Color.White);
+            sb.Draw(t_box, t_choosencolor_right, Color.White); 
+            sb.Draw(t_box, t_choosencolor_top, Color.White);
+            sb.Draw(t_box, t_choosencolor_bot, Color.White);
 
-            base.Draw(sb);
         }
 
         #endregion
@@ -173,15 +198,45 @@ namespace _3DColor.State
         {
 
             if (t_blue_rect.Contains(InputHandler.MousePosition()) && InputHandler.MouseReleased())
+            {
                 t_color_scheme = "Blue";
+                Values.CURRENT_DARK = Values.BLUE_DARK;
+                Values.CURRENT_NORMAL = Values.BLUE_NORMAL;
+                Values.CURRENT_LIGHT = Values.BLUE_LIGHT;
+                t_current_rect = t_blue_rect;
+            }
             else if (t_green_rect.Contains(InputHandler.MousePosition()) && InputHandler.MouseReleased())
-                t_color_scheme = "Green";
+            {
+                t_color_scheme = "Green"; 
+                Values.CURRENT_DARK = Values.GREEN_DARK;
+                Values.CURRENT_NORMAL = Values.GREEN_NORMAL;
+                Values.CURRENT_LIGHT = Values.GREEN_LIGHT;
+                t_current_rect = t_green_rect;
+            }
             else if (t_orange_rect.Contains(InputHandler.MousePosition()) && InputHandler.MouseReleased())
+            {
                 t_color_scheme = "Orange";
+                Values.CURRENT_DARK = Values.ORANGE_DARK;
+                Values.CURRENT_NORMAL = Values.ORANGE_NORMAL;
+                Values.CURRENT_LIGHT = Values.ORANGE_LIGHT;
+                t_current_rect = t_orange_rect;
+            }
             else if (t_purple_rect.Contains(InputHandler.MousePosition()) && InputHandler.MouseReleased())
+            {
                 t_color_scheme = "Purple";
+                Values.CURRENT_DARK = Values.PURPLE_DARK;
+                Values.CURRENT_NORMAL = Values.PURPLE_NORMAL;
+                Values.CURRENT_LIGHT = Values.PURPLE_LIGHT;
+                t_current_rect = t_purple_rect;
+            }
             else if (t_gray_rect.Contains(InputHandler.MousePosition()) && InputHandler.MouseReleased())
+            {
                 t_color_scheme = "Gray";
+                Values.CURRENT_DARK = Values.GRAY_DARK;
+                Values.CURRENT_NORMAL = Values.GRAY_NORMAL;
+                Values.CURRENT_LIGHT = Values.GRAY_LIGHT;
+                t_current_rect = t_gray_rect;
+            }
         
         }
 

@@ -59,7 +59,7 @@ namespace _3DColor.State
         {
             cloudTimerSpawn += gt.ElapsedGameTime.TotalSeconds;
             if (cloudTimerSpawn >= cloudTimer){
-                SpawnCloud();
+                //SpawnCloud();
                 cloudTimerSpawn = 0;
             }
 
@@ -71,10 +71,9 @@ namespace _3DColor.State
 
         public override void Draw(SpriteBatch sb)
         {
-
-            sb.Draw(t_background, Vector2.Zero, Color.White);
-            sb.Draw(t_logo, new Rectangle(1920 / 2 - t_logo.Bounds.Width / 2, 1080 / 2 - t_logo.Bounds.Height / 2, t_logo.Bounds.Width, t_logo.Bounds.Height), Color.White);
             base.Draw(sb);
+            sb.Draw(t_logo, new Rectangle(1920 / 2 - t_logo.Bounds.Width / 2, 1080 / 2 - t_logo.Bounds.Height / 2, t_logo.Bounds.Width, t_logo.Bounds.Height), Color.White);
+
         }
 
         #endregion
