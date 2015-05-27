@@ -40,10 +40,31 @@ namespace _3DColor.State
         private const string BACKGROUND = "Graphics/General/Background";
         private const string BOX = "Graphics/General/Box";
         private const string FONT = "Fonts/Options";
+        private const string FRAME = "Graphics/Options/Frame";
+
 
         private Texture2D t_box;
         private Texture2D t_background;
+        private Texture2D t_frame;
         private SpriteFont t_font;
+
+        #region Controller fields
+        private const string CONTROLLER = "Graphics/Options/Controller";
+        private const string KEYBOARD = "Graphics/Options/Keyboard";
+
+        private Texture2D t_keyboard;
+        private Texture2D t_controller;
+
+        private Rectangle t_controller_rect;
+        private Rectangle t_keyboard_rect;
+        
+        //0 - Keyboard
+        //1 - Controller
+        private int t_current_controller;
+
+        #endregion
+
+        #region Color scheme fields
 
         private Rectangle t_blue_rect;
         private Rectangle t_green_rect;
@@ -59,7 +80,9 @@ namespace _3DColor.State
         private Rectangle t_choosencolor_bot;
 
         private string t_color_scheme;
-        
+
+        #endregion
+
         #endregion
 
         #region Contructor
@@ -69,6 +92,7 @@ namespace _3DColor.State
 
             LoadContent();
             InitColorRect();
+            InitControllersOption();
             t_current_rect = t_blue_rect;
 
             t_choosencolor_left = new Rectangle(t_current_rect.X - 20, t_current_rect.Y - 20, 5, t_current_rect.Height + 40);
@@ -117,6 +141,12 @@ namespace _3DColor.State
             sb.Draw(t_box, t_choosencolor_right, Color.White); 
             sb.Draw(t_box, t_choosencolor_top, Color.White);
             sb.Draw(t_box, t_choosencolor_bot, Color.White);
+            if (t_current_controller == 0) //Keyboard
+                sb.Draw(t_frame, t_keyboard_rect, Color.White);
+            else
+                sb.Draw(t_frame, t_controller_rect, Color.White);
+            sb.Draw(t_keyboard, t_keyboard_rect, Color.White);
+            sb.Draw(t_controller, t_controller_rect, Color.White);
 
         }
 
@@ -132,6 +162,9 @@ namespace _3DColor.State
             t_box = TextureLibrary.GetTexture(BOX);
             t_font = FontLibrary.GetFont(FONT);
             t_background = TextureLibrary.GetTexture(BACKGROUND);
+            t_keyboard = TextureLibrary.GetTexture(KEYBOARD);
+            t_controller = TextureLibrary.GetTexture(CONTROLLER);
+            t_frame = TextureLibrary.GetTexture(FRAME);
 
             base.LoadContent();
         }
@@ -188,6 +221,15 @@ namespace _3DColor.State
             l_color_rect.Add(new ColorRect(t_box, new Rectangle(930, 530, 100, 100), Values.GRAY_NORMAL));
             l_color_rect.Add(new ColorRect(t_box, new Rectangle(960, 560, 100, 100), Values.GRAY_LIGHT));
             t_gray_rect = new Rectangle(900, 500, 160, 160);
+
+        }
+
+        private void InitControllersOption()
+        { 
+            //Keyboard
+            t_keyboard_rect = new Rectangle((int)(Values.SCREEN_WIDTH * 0.05), (int)(Values.SCREEN_HEIGHT - (Values.SCREEN_WIDTH * 0.05 + 150)), 150, 150);
+            t_controller_rect = new Rectangle((int)((Values.SCREEN_WIDTH * 0.075) + 150), (int)(Values.SCREEN_HEIGHT - (Values.SCREEN_WIDTH * 0.05 + 150)), 150, 150);
+            t_current_controller = 0;
 
         }
 

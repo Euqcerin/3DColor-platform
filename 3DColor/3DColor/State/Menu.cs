@@ -92,6 +92,11 @@ namespace _3DColor.State
             base.LoadContent();
         }
 
+        private void AnimateIn()
+        { 
+            
+        }
+
         #endregion
 
     }

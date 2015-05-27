@@ -5,3 +5,6 @@ Content\Fonts\Intro.xnb
 Content\Fonts\Options.xnb
 Content\Graphics\General\Background.xnb
 Content\Graphics\General\Box.xnb
+Content\Graphics\Options\Controller.xnb
+Content\Graphics\Options\Frame.xnb
+Content\Graphics\Options\Keyboard.xnb

@@ -64,6 +64,33 @@
       <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\General\Box.xnb</Output>
       <Time>2015-05-16T23:19:09.2887671+02:00</Time>
     </Item>
+    <Item>
+      <Source>Graphics\Options\Controller.png</Source>
+      <Name>Graphics\Options\Controller</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\Options\Controller.xnb</Output>
+      <Time>2015-05-27T22:20:43.8420047+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Graphics\Options\Frame.png</Source>
+      <Name>Graphics\Options\Frame</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\Options\Frame.xnb</Output>
+      <Time>2015-05-27T22:20:43.8530053+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Graphics\Options\Keyboard.png</Source>
+      <Name>Graphics\Options\Keyboard</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\Options\Keyboard.xnb</Output>
+      <Time>2015-05-27T22:20:45.85812+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID Null="true" />

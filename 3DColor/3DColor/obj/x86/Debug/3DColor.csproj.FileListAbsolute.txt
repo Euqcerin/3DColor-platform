@@ -13,3 +13,6 @@ C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\
 C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Fonts\Options.xnb
 C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\General\Background.xnb
 C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\General\Box.xnb
+C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\Options\Controller.xnb
+C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\Options\Frame.xnb
+C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\Options\Keyboard.xnb
