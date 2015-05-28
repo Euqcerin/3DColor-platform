@@ -8,3 +8,8 @@ Content\Graphics\General\Box.xnb
 Content\Graphics\Options\Controller.xnb
 Content\Graphics\Options\Frame.xnb
 Content\Graphics\Options\Keyboard.xnb
+Content\Graphics\Options\Blue.xnb
+Content\Graphics\Options\Gray.xnb
+Content\Graphics\Options\Green.xnb
+Content\Graphics\Options\Orange.xnb
+Content\Graphics\Options\Purple.xnb

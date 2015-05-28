@@ -91,6 +91,51 @@
       <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\Options\Keyboard.xnb</Output>
       <Time>2015-05-27T22:20:45.85812+02:00</Time>
     </Item>
+    <Item>
+      <Source>Graphics\Options\Blue.png</Source>
+      <Name>Graphics\Options\Blue</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\Options\Blue.xnb</Output>
+      <Time>2015-05-28T21:48:02.3036982+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Graphics\Options\Gray.png</Source>
+      <Name>Graphics\Options\Gray</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\Options\Gray.xnb</Output>
+      <Time>2015-05-28T21:48:02.3096986+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Graphics\Options\Green.png</Source>
+      <Name>Graphics\Options\Green</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\Options\Green.xnb</Output>
+      <Time>2015-05-28T21:48:02.3116987+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Graphics\Options\Orange.png</Source>
+      <Name>Graphics\Options\Orange</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\Options\Orange.xnb</Output>
+      <Time>2015-05-28T21:48:02.3136988+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Graphics\Options\Purple.png</Source>
+      <Name>Graphics\Options\Purple</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fredrik\Desktop\Programmering\3DColor\3DColor-platform\3DColor\3DColor\bin\x86\Debug\Content\Graphics\Options\Purple.xnb</Output>
+      <Time>2015-05-28T21:48:02.3146989+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID Null="true" />
