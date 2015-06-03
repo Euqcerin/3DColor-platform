@@ -116,6 +116,7 @@
     <Compile Include="Game1.cs" />
     <Compile Include="State\BaseState.cs" />
     <Compile Include="State\Intro.cs" />
+    <Compile Include="State\LevelSelect.cs" />
     <Compile Include="State\Menu.cs" />
     <Compile Include="State\Options.cs" />
     <Compile Include="Values.cs" />
